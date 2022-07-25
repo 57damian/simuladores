@@ -1,0 +1,209 @@
+body {
+    font-family: Special Elite;
+    background: linear-gradient(to right, rgb(222, 226, 222), rgb(83, 83, 56));
+    
+}
+
+@keyframes titulo{
+    0%{
+        color: black;
+    }
+    100%{
+        color:red
+    }
+}
+
+
+
+
+
+.titulo {
+    border: 1px solid black;
+    padding: 2%;
+    margin: 1% 2% 1% 2%;
+    text-align: center;
+    transform: rotate(5deg);
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.botonera ul {
+    list-style: none;
+}
+
+.botonera ul .bot a {
+    text-decoration: none;
+    color: black
+}
+
+.bot {
+    border: 1px solid black;
+    padding: 2%;
+    margin: 1% 2% 1% 2%;
+    text-align: center;
+}
+
+.texto {
+    
+    border: 1px solid black;
+    padding: 2%;
+    margin: 1% 4% 1% 4%;
+}
+
+.imagen {
+    background-color: beige;
+    border: 1px solid black;
+    padding: 2%;
+    min-width: 10%;
+}
+
+.header {
+    grid-area: header;
+}
+
+.botonera {
+    display: grid;
+    grid-template-areas:
+        "bot1 bot2";
+}
+
+.bot1 {
+    grid-area: bot1;
+}
+
+.bot2 {
+    grid-area: bot2;
+}
+
+.gridPadre {
+   
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+
+    grid-template-areas:
+        "imagenUno imagenDos"
+        "imagenTres imagenCuatro";
+
+    gap: 20px;
+
+    
+    
+}
+
+@media (max-width: 500px){
+    .gridPadre{
+        grid-template-areas:
+        "imagenUno"
+        "imagenDos"
+        "imagenTres"
+        "imagenCuatro";
+        }
+}
+
+.imagenUno {
+    grid-area: imagenUno;
+
+    
+}
+
+.imagenDos {
+    grid-area: imagenDos;
+    
+    
+}
+
+.imagenTres {
+    grid-area: imagenTres;
+    
+}
+
+.imagenCuatro {
+    grid-area: imagenCuatro;
+    
+}
+
+ul{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.h2Mario{
+    display: flex;
+    justify-content: center;
+}
+
+.bodyMario{
+    display: grid;
+    grid-template-areas:
+    "headerMario headerMario"
+    
+    "mainMario imagenMario"
+    "mainMario imagenMario"
+    "mainMario imagenMario"
+    "footerMario footerMario" ;
+}
+
+@media (max-width: 500px){
+    .bodyMario{
+        display: grid;
+        grid-template-areas:
+        "headerMario"
+        
+        "mainMario"
+        "imagenMario"
+        
+        "footerMario" ;
+    }
+}
+
+.headerMario{
+    grid-area: headerMario;
+}
+
+.imagenMario{
+    display: flex;
+    justify-content: center; 
+    grid-area: imagenMario;
+    background-color: darkgray;
+    
+}
+
+.mainMario{
+    grid-area: mainMario;
+}
+
+.footerMario{
+    grid-area: footerMario ;
+}
+
+
+
+.imagenUno:hover{
+    width: 103%;
+    
+}
+
+
+.imagenDos:hover{
+    width: 103%;
+    
+}
+
+
+.imagentres:hover{
+    width: 103%;
+    
+}
+
+
+.imagenCuatro:hover{
+    width: 103%;
+    
+}
+
+
+
+
